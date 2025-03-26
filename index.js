@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(renderMenuItems)
             .catch(error => console.error('Error fetching menu:', error));
     }
-
+    
     // Use forEach method to Render the menu items
     function renderMenuItems(items) {
         menuContainer.innerHTML = '';
@@ -182,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderMenuItems(filtered);
             });
     }
+            
 
     // Add new item to menu
     function handleAddItem(e) {
