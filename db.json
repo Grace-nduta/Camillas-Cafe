@@ -1,0 +1,104 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "name": "Class Latte",
+      "description": "A Creamy, Velvety and Thick Drink.",
+      "price": 800,
+      "category": "drinks",
+      "available": 47,
+      "image": "https://plus.unsplash.com/premium_photo-1664970900069-47e15574f7bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xhc3MlMjBsYXR0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      "ingredients": [
+        "Steamed Milk",
+        "Dairy Oat",
+        "Foam"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Milk Shake",
+      "description": "A Creamy, Velvety and Thick Drink.",
+      "price": 400,
+      "category": "drinks",
+      "available": 98,
+      "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWlsayUyMHNoYWtlfGVufDB8fDB8fHww",
+      "ingredients": [
+        "Dark Chocolate",
+        "Fudge Drizzle",
+        "Foam"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Avocado Toast",
+      "description": "Mouth watery and creamy.",
+      "price": 300,
+      "category": "foods",
+      "available": 30,
+      "image": "https://plus.unsplash.com/premium_photo-1676106623583-e68dd66683e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXZvY2FkbyUyMHRvYXN0fGVufDB8fDB8fHww",
+      "ingredients": [
+        "Smashed Avocado",
+        "Chili Flakes"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Cheeseburger",
+      "description": "A juicy beef patty with melted cheese, lettuce, and tomato.",
+      "price": 500,
+      "category": "foods",
+      "available": 40,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlZXNlJTIwYnVyZ2VyfGVufDB8fDB8fHww",
+      "ingredients": [
+        "Beef Patty",
+        "Cheese",
+        "Lettuce",
+        "Tomato",
+        "Bun"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Caprice Sandwich",
+      "description": "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan.",
+      "price": 700,
+      "category": "foods",
+      "image": "https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcmljZSUyMHNhbmR3aWNofGVufDB8fDB8fHww",
+      "available": 90,
+      "ingredients": [
+        "Fresh Mozzarella",
+        "Tomato",
+        "Basil Balsamic"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Margherita Pizza",
+      "description": "Classic pizza with fresh mozzarella, basil, and tomato sauce.",
+      "price": 2000,
+      "category": "foods",
+      "available": 70,
+      "image": "https://media.istockphoto.com/id/1907940102/photo/margarita-pizza.webp?a=1&b=1&s=612x612&w=0&k=20&c=9C54qdw4eJWg-f2TMDNtmS7HcATgKSncZhyTLzL5J4M=",
+      "ingredients": [
+        "Pizza Dough",
+        "Mozzarella",
+        "Basil",
+        "Tomato Sauce"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "spaghetti",
+      "category": "foods",
+      "price": 550,
+      "description": "silky and yummy",
+      "image": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhZ2hldHRpfGVufDB8fDB8fHww",
+      "ingredients": [
+        "tomatoes",
+        "chilly",
+        "onions"
+      ],
+      "available": 49
+    }
+  ]
+}

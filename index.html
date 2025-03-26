@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camillas' Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO CAMILLAS' CAFE</h1>
+        <p>Get to explore our drinks and delicacies!</p>
+        <button id="dark-mode-toggle">🌙 Dark Mode</button> 
+    </header>
+
+    <main>
+        <!-- Menu Display -->
+        <section class="item-details"> 
+            <h2 id="menu">Menu</h2>
+            <div class="controls">
+                <input type="text" id="search" placeholder="Search...">
+                <select id="filter-category">
+                    <option value="all">All Items</option> 
+                    <option value="foods">Foods</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </div>
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+
+        <section class="image-gallery">
+        <div id="feature-images" class="images-grid"> </div>
+        </section>
+
+          <!--select order section-->
+          <section class="order-section">
+            <h2>Place Your Order</h2>
+            <div id="order-items"></div>
+            <div id="order-total">
+                <p>Total: <span id="total-cost">Ksh 0</span></p>
+                <button id="place-order-btn" disabled>Place Order</button>
+            </div>
+        </section>
+
+        <!-- Add New Items -->
+        <section class="add-item-section"> 
+            <h2>Add New Items</h2>
+            <form id="add-item-form"> 
+                <div class="form-group">
+                <label for="item-category">Category</label> 
+                <select id="item-category" required>
+                    <option value="foods">Foods</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+                </div>
+                
+                <div class="form-group">
+                <label for="item-name">Name</label> 
+                <input type="text" id="item-name" placeholder="Item Name" required>
+                </div>
+
+                <div class="form-group">
+                <label for="item-description">Description</label>
+                <textarea id="item-description" placeholder="Item Description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="item-price">Price (Ksh)</label>
+                <input type="number" id="item-price" min="0" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="item-ingredients">Ingredients</label>
+                <textarea id="item-ingredients" placeholder="List ingredients (comma separated)" required></textarea>
+                </div>
+
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="item-available" checked>
+                    <label for="item-available">Available</label>
+                </div>
+
+                <button type="submit">Add to Menu</button>
+            </form>
+        </section>
+          <!-- Reviews Section -->
+          <section class="reviews-section">
+            <h2>Customer Reviews</h2>
+            
+            <div class="add-review">
+                <h3>Leave a Review</h3>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Your Name</label>
+                        <input type="text" id="review-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-rating">Rating (1-5)</label>
+                        <select id="review-rating" required>
+                            <option value="5">★★★★★</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="1">★☆☆☆☆</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-comment">Your Review</label>
+                        <textarea id="review-comment" required></textarea>
+                    </div>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+
+            <div id="reviews-list" class="reviews-grid"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
