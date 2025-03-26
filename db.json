@@ -100,5 +100,15 @@
       ],
       "available": 49
     }
-  ]
+  ],
+  "reviews":[
+    {
+      "id":1,
+      "CustomerName":"Johnson Jay",
+      "rating":"4",
+      "comment":"Love everything about the Latte!",
+      "date":"2025-02-17"
+  }
+]
+
 }
