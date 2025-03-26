@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         updateOrderDisplay();
-        //console.log('current Order:', CurrentOrder);
     }
 
     //Update Order Display
@@ -135,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Attempted to place empty order');
             return;
         } 
-        //console.log('placing order:',CurrentOrder);
 
         const promises = CurrentOrder.map(item => {
             const newStock = parseInt(item.available) - item.quantity;
