@@ -64,7 +64,7 @@
       "price": 700,
       "category": "foods",
       "image": "https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcmljZSUyMHNhbmR3aWNofGVufDB8fDB8fHww",
-      "available": 90,
+      "available": 89,
       "ingredients": [
         "Fresh Mozzarella",
         "Tomato",
@@ -101,22 +101,20 @@
       "available": 49
     }
   ],
-  "reviews":[
+  "reviews": [
     {
-      "id":1,
-      "CustomerName":"Johnson Jay",
-      "rating":"4",
-      "comment":"Love everything about the Latte!",
-      "date":"2025-02-17"
-  },
-  {
-    "id":2,
-    "CustomerName":"Liam Grae",
-    "rating":"5",
-    "comment":"Talk about perfection!",
-    "date":"2025-01-20"
-}
-
-]
-
+      "id": "1",
+      "CustomerName": "Johnson Jay",
+      "rating": "4",
+      "comment": "Love everything about the Latte!",
+      "date": "2025-02-17"
+    },
+    {
+      "id": "2",
+      "CustomerName": "Liam Grae",
+      "rating": "5",
+      "comment": "Talk about perfection!",
+      "date": "2025-01-20"
+    }
+  ]
 }

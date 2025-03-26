@@ -396,6 +396,58 @@ main {
     .controls {
         flex-direction: column;
     }
+
+    /* Reviews Section */
+.reviews-section {
+    padding: 2rem;
+    background-color: var(--light-bg);
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.add-review {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.review-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.review-rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.review-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.review-comment {
+    line-height: 1.6;
+}
+
     
     #dark-mode-toggle {
         position: static;
