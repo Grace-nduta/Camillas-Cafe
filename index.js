@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let CurrentOrder =[];
 
     //initialize the dark mode from local Storage
-    const saveMode =localStorage.getItem('dark-mode');
-    if (saveMode === "dark"){
+    if (localStorage.getItem('darkMode')==="dark"){
         document.body.classList.add('dark-mode');
         darkModeToggle.textContent="☀ Light Mode";
     }
