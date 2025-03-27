@@ -34,12 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch menu items from db.json
     function fetchMenuItems() {
-        fetch('http://localhost:3000/menu')
+        fetch('https://camillas-cafe.onrender.com/menu')
             .then(response => response.json())
             .then(renderMenuItems)
             .catch(error => console.error('Error fetching menu:', error));
     }
-    
+
     // Use forEach method to Render the menu items
     function renderMenuItems(items) {
         menuContainer.innerHTML = '';
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const promises = CurrentOrder.map(item => {
             const newStock = parseInt(item.available) - item.quantity;
-            return fetch(`http://localhost:3000/menu/${item.id}`, {
+            return fetch(`https://camillas-cafe.onrender.com${item.id}`, {
                 method: "PATCH",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ available: newStock })
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Search functionality
     function handleSearch() {
         const searchTerm = searchInput.value.toLowerCase();
-        fetch('http://localhost:3000/menu')
+        fetch('https://camillas-cafe.onrender.com/menu')
             .then(response => response.json())
             .then(items => {
                 const filtered = items.filter(item => 
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filter by category
     function handleFilter() {
         const category = filterSelect.value;
-        fetch('http://localhost:3000/menu')
+        fetch('https://camillas-cafe.onrender.com/menu')
             .then(response => response.json())
             .then(items => {
                 const filtered = category === 'all' 
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             available: document.getElementById('item-available').checked ? 50 : 0,
         };
 
-        fetch('http://localhost:3000/menu', {
+        fetch('https://camillas-cafe.onrender.com/menu', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
