@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const promises = CurrentOrder.map(item => {
             const newStock = parseInt(item.available) - item.quantity;
-            return fetch(`https://camillas-cafe.onrender.com${item.id}`, {
+            return fetch(`https://camillas-cafe.onrender.com/menu${item.id}`, {
                 method: "PATCH",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ available: newStock })
